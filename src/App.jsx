@@ -48,6 +48,7 @@ function App() {
       }
     });
     localStorage.setItem("ListOfProjects", JSON.stringify(updatedList));
+    localStorage.removeItem(projectUserWantToDelete);
     setListOfProjects(updatedList);
   }, [projectUserWantToDelete]);
 
