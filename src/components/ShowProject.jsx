@@ -52,7 +52,7 @@ export default function ShowProject(props) {
         </div>
         <p>{project.description}</p>
         <div className="border-b-gray-400 my-5 border border-b-2"></div>
-        <Tasks />
+        <Tasks project={project.title} />
       </div>
     </div>
   );
